@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Table Width & Height</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        /* 100% */
+        .w100 {
+            width: 100%;
+        }
+
+        /* 50% */
+        .w50 {
+            width: 50%;
+        }
+
+        /* 500px */
+        .wpx {
+            width: 500px;
+        }
+
+        /* auto */
+        .wauto {
+            width: auto;
+        }
+
+        /* header height */
+        .height th {
+            height: 70px;
+        }
+        /* ===== ALIGNMENT ===== */
+.align th {
+  text-align: left;
+}
+
+.align td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ===== STYLING ===== */
+.styling table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styling th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.styling th, 
+.styling td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.styling tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styling tr:hover {
+  background-color: #ddd;
+}
+
+/* ===== RESPONSIVE TABLE ===== */
+.responsive {
+  overflow-x: auto;
+}
+
+.responsive table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive th,
+.responsive td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+.bai1{
+    div.tablecontainer {
+  overflow-x: auto;
+}
+
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+}
+}
+    </style>
+</head>
+<body>
+
+<h2>Table width = 100%</h2>
+<table class="w100">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+    </tr>
+</table>
+
+<h2>Table width = 50%</h2>
+<table class="w50">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+    </tr>
+</table>
+
+<h2>Table width = 500px</h2>
+<table class="wpx">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+    </tr>
+</table>
+
+<h2>Table width = auto</h2>
+<table class="wauto">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+    </tr>
+</table>
+
+<h2>Set height of table header (th)</h2>
+<table class="w100 height">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+    </tr>
+</table>
+<hr>
+
+<!-- ===== 7. ALIGNMENT ===== -->
+<section class="align">
+<h2>7. Table Alignment</h2>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </tr>
+  <tr>
+    <td>Book</td>
+    <td>$10</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Pen</td>
+    <td>$2</td>
+    <td>20</td>
+  </tr>
+</table>
+</section>
+
+<hr>
+
+<!-- ===== 8. TABLE STYLING ===== -->
+<section class="styling">
+<h2>8. Styling Tables</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Nguyen Van A</td>
+    <td>a@gmail.com</td>
+    <td>Vietnam</td>
+  </tr>
+  <tr>
+    <td>Tran Thi B</td>
+    <td>b@gmail.com</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Le Van C</td>
+    <td>c@gmail.com</td>
+    <td>Japan</td>
+  </tr>
+</table>
+</section>
+
+<hr>
+
+<!-- ===== 9. RESPONSIVE TABLE ===== -->
+<section>
+<h2>9. Responsive Table</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="responsive">
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Nguyen Van A</td>
+    <td>a@gmail.com</td>
+    <td>0123456789</td>
+    <td>Ha Noi</td>
+    <td>Vietnam</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Tran Thi B</td>
+    <td>b@gmail.com</td>
+    <td>0987654321</td>
+    <td>HCM</td>
+    <td>USA</td>
+  </tr>
+</table>
+</div>
+</section>
+<search class = "bai1">
+    
+<h2>Responsive Table</h2>
+<p>A responsive table will display a horizontal scroll bar if the screen is too 
+small to display the full content. Resize the browser window to see the effect:</p>
+<p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table element:</p>
+
+<div class="tablecontainer">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+</search>
+</body>
+</html>
+ 

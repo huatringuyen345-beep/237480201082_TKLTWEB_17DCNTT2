@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Demo CSS display</title>
+
+<style>
+/* ===== PANEL CLICK ===== */
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 80%;
+}
+
+#panel {
+  display: none;
+}
+
+/* ===== LINK BLOCK ===== */
+.link-block a {
+  display: block;
+  margin: 5px 0;
+}
+
+/* ===== MENU NGANG ===== */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 15px;
+}
+
+/* ===== SPAN BLOCK ===== */
+.span-block span {
+  display: block;
+  margin: 5px 0;
+}
+
+/* ===== DISPLAY DEMO ===== */
+.display-demo p {
+  background-color: blue;
+  padding: 10px;
+  color: white;
+}
+
+.display-demo span {
+  background-color: red;
+  padding: 10px;
+  margin: 5px;
+}
+
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+p.ex5 {display: flex;}
+p.ex6 {display: grid;}
+</style>
+</head>
+
+<body>
+
+<h1>CSS Display Demo</h1>
+
+<!-- PANEL -->
+<p class="flip" onclick="myFunction()">Click để mở panel</p>
+
+<div id="panel">
+  <p>Panel này bị ẩn mặc định (display: none).</p>
+  <p>Khi click sẽ đổi sang display: block.</p>
+</div>
+
+<hr>
+
+<!-- LINK BLOCK -->
+<h2>Link dạng block</h2>
+<div class="link-block">
+  <a href="#">HTML</a>
+  <a href="#">CSS</a>
+  <a href="#">JavaScript</a>
+</div>
+
+<hr>
+
+<!-- MENU NGANG -->
+<h2>Menu ngang (display: inline)</h2>
+<div class="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<!-- SPAN BLOCK -->
+<h2>Span hiển thị dạng block</h2>
+<div class="span-block">
+  <span>Span 1</span>
+  <span>Span 2</span>
+  <span>Span 3</span>
+</div>
+
+<hr>
+
+<!-- DISPLAY PROPERTY -->
+<h2>Thuộc tính display</h2>
+<div class="display-demo">
+
+<h3>display: none</h3>
+<p class="ex1">
+  <span>Text 1</span>
+  <span>Text 2</span>
+</p>
+
+<h3>display: inline</h3>
+<p class="ex2">
+  <span>Text 1</span>
+  <span>Text 2</span>
+</p>
+
+<h3>display: block</h3>
+<p class="ex3">
+  <span>Text 1</span>
+  <span>Text 2</span>
+</p>
+
+<h3>display: inline-block</h3>
+<p class="ex4">
+  <span>Text 1</span>
+  <span>Text 2</span>
+</p>
+
+<h3>display: flex</h3>
+<p class="ex5">
+  <span>Text 1</span>
+  <span>Text 2</span>
+</p>
+
+<h3>display: grid</h3>
+<p class="ex6">
+  <span>Text 1</span>
+  <span>Text 2</span>
+</p>
+
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+</script>
+
+</body>
+</html>

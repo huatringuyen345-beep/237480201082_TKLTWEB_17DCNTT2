@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS List Style</title>
+
+<style>
+/* ===== Bài 1: list-style-position ===== */
+ul.a {
+  list-style-position: outside;
+}
+
+ul.b {
+  list-style-position: inside;
+}
+
+/* ===== Bài 2: list-style shorthand ===== */
+ul.shorthand {
+  list-style: square inside;
+}
+
+/* ===== Bài 3: remove bullets ===== */
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Bài 4: styling list ===== */
+ol.color {
+  background: salmon;
+  padding: 20px;
+}
+
+ol.color li {
+  background: mistyrose;
+  color: darkred;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+ul.color {
+  background: powderblue;
+  padding: 20px;
+}
+
+ul.color li {
+  background: mistyrose;
+  color: darkblue;
+  margin: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>CSS List Style Examples</h1>
+
+<hr>
+
+<h2>1. list-style-position: outside</h2>
+<ul class="a">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans</li>
+  <li>Tea - An aromatic beverage</li>
+  <li>Coca Cola - A carbonated soft drink</li>
+</ul>
+
+<h2>list-style-position: inside</h2>
+<ul class="b">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans</li>
+  <li>Tea - An aromatic beverage</li>
+  <li>Coca Cola - A carbonated soft drink</li>
+</ul>
+
+<hr>
+
+<h2>2. list-style shorthand</h2>
+<ul class="shorthand">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<hr>
+
+<h2>3. list-style-type: none</h2>
+
+<p>Default list:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Remove bullets:</p>
+<ul class="demo">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<hr>
+
+<h2>4. Styling Lists</h2>
+
+<ol class="color">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ul class="color">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>

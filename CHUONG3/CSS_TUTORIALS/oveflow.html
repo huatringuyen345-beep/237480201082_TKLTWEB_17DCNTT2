@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Overflow Demo</title>
+
+<style>
+.box {
+  width: 200px;
+  height: 80px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background: coral;
+}
+
+.visible { overflow: visible; }
+.hidden  { overflow: hidden; }
+.scroll  { overflow: scroll; }
+.auto    { overflow: auto; }
+.xy {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+</style>
+</head>
+
+<body>
+
+<h2>overflow: visible</h2>
+<div class="box visible"> <P>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+
+You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+</div>
+
+<h2>overflow: hidden</h2>
+<div class="box hidden">Nội dung rất dài bị tràn ra ngoài box</div>
+
+<h2>overflow: scroll</h2>
+<div class="box scroll"><p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+    You can use the overflow property when you want to have better control of the layout. 
+    The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h2>overflow: auto</h2>
+<div class="box auto"><p>The auto value is similar to scroll, only it add scrollbars when necessary:</p>
+
+<div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+</div>
+
+<h2>overflow-x / overflow-y</h2>
+<div class="box xy"><p>overflow-x specifies what to do with the left/right edges of the content.</p>
+<p>overflow-y specifies what to do with the top/bottom edges of the content.</p>
+
+<div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+</div>
+
+</body>
+</html>
