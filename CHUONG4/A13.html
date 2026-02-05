@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Hay nhap hai so va click vao nut tinh tong </h2>
+    <input type="text" name = "SoHang1"> +
+    <input type="text" name = "SoHang2"> =
+    <input type="text" name = "KetQua">
+
+    <input type="button" value="Tính Tổng" onclick="
+    var a = parseFloat(document.getElementsByName('SoHang1')[0].value) || 0;
+    var b = parseFloat(document.getElementsByName('SoHang2')[0].value) || 0;
+    document.getElementsByName('KetQua')[0].value = a + b;">
+
+</body>
+</html>

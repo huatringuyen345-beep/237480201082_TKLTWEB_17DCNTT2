@@ -1,0 +1,20 @@
+h1{
+    color: red;
+    font:bold;
+}
+h2{
+    color: blue;
+    font:normal;
+}
+p.a{
+    font:bold;
+    color: black;
+    font-size: 14pt;
+
+}
+p.b{
+
+    font:bold;
+    color:black;
+    font-size: 14;
+}
